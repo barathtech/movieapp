@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "bk"
+    imagename = "ubuntu"
     dockerImage = ''
   }
 agent {label 'java-docker-slave'}
