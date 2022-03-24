@@ -3,7 +3,7 @@ pipeline {
     imagename = "bk"
     dockerImage = ''
   }
-  agent java-docker-slave
+  node ('java-docker-slave')
   stages {
     stage('Cloning Git') {
       steps {
