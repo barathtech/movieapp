@@ -1,9 +1,4 @@
-pipeline {
-  environment {
-    imagename = "bk"
-    dockerImage = ''
-       }
-  node 'java-docker-slave'{ 
+node 'java-docker-slave'{ 
   stage('Cloning Git') {
         git 'https://github.com/barathtech/movieapp.git'
       }
