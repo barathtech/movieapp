@@ -2,14 +2,11 @@ pipeline {
   environment {
     imagename = "bk"
     dockerImage = ''
-  }
+       }
   node('java-docker-slave'){ 
   stage('Cloning Git') {
-      steps {
-       sh''' git([url: 'https://github.com/barathtech/movieapp.git', branch: 'main', ])'''
-
+        git https://github.com/barathtech/movieapp.git'
       }
-    }
     stage('Building image') {
       steps{
         script {
