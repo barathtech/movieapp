@@ -8,6 +8,8 @@ agent {label 'docker-slave'}
     stage('Cloning Git') {
       steps {
         git([url: 'https://github.com/barathtech/movieapp.git', branch: 'main', ])
+        sh''' apt install nodejs -y'''
+        sh'''apt install docker -y'''
        }
     }
     stage('Building image') {
