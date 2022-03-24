@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    imagename = "ubuntu"
-    dockerImage = ''
+    imagename = "bk"
+    dockerImage = 'ubuntu'
   }
 agent {label 'java-docker-slave'}
   stages {
@@ -13,7 +13,7 @@ agent {label 'java-docker-slave'}
     stage('Building image') {
       steps{
         script {
-          dockerImage = ubuntu.build imagename
+          dockerImage = docker.build imagename
         }
       }
     }
