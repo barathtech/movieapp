@@ -13,7 +13,7 @@ agent {label 'java-docker-slave'}
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build imagename
+          dockerImage = ubuntu.build imagename
         }
       }
     }
