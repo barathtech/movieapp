@@ -5,7 +5,7 @@ pipeline{
   stages {
     stage ('test') {
       steps {
-        sh ''apt install nodejs''
+        sh ''echo ''hi'' ''
         }
       }
     }
