@@ -9,7 +9,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker build ubuntu:latest
+          dockerImage = docker build.ubuntu:latest
         }
       }
     }
