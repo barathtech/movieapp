@@ -1,5 +1,5 @@
 pipeline {
- agent any
+ agent('docker-slave')
   stages {
     stage('Cloning Git') {
       steps {
