@@ -3,7 +3,7 @@ pipeline {
     imagename = "bk"
     dockerImage = 'ubuntu'
   }
-agent {label 'docker-slave'}
+agent 
   stages {
     stage('Cloning Git') {
       steps {
