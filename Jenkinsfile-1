@@ -1,0 +1,12 @@
+pipeline{
+  agent {
+    docker {image 'ubuntu'}
+   }  
+  stages {
+    stage ('test') {
+      steps {
+        sh ''apt install nodejs''
+        }
+      }
+    }
+  } 
