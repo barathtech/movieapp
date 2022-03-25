@@ -1,9 +1,5 @@
 pipeline {
-  environment {
-    imagename = "bk"
-    dockerImage = 'ubuntu'
-  }
-agent 
+ agent 
   stages {
     stage('Cloning Git') {
       steps {
